@@ -16,16 +16,20 @@ The dataset, [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arash
 ## Data Manipulation
 ### Checking Data Integrity
 By reviewing the summary table of the daily intensities dataset, we can see that the "ActivityDay" column is of character type, which may impact my analysis later. To resolve this, I will convert it into a date type. Additionally, I thoroughly reviewed the dataset to ensure that there are no missing values that could affect my analysis.
+
 ![summary_of_daily_intensities_dataset](daily_intensities_summary.png)
 
 ## Analysis
 ### Checking the Average Minutes of Daily Intensities
 The daily intensities dataset includes four types of activity: sedentary, light active, fairly active, and very active.
+
 ![boxplot](mean_daily_intensities.png)
+
 The boxplot can be used to identify the distribution of each activity level. From the chart, it appears that the sedentary activity level has the highest average minutes, indicating that most customers spend a significant amount of time sitting and not engaging in intense physical activity throughout the day. The average minutes for sedentary activity is 991, for light activity is 193, for fairly active is 13.6, and for very active is 21.2. There are large gaps between each category. The marketing strategy team should consider this information in customer behavior as an important factor in their strategy.
 
 ### The Activity Trend
 ![activity_trend](mean_daily_intensities.png)
+
 The gaps between each activity level are more obvious in a line plot. The sedentary activity level is significantly above other activities. Although the trend has declined slightly over time, it is still significantly higher than other activities.
 The decline in sedentary activity may indicate that customers are intentionally reducing their sedentary activity due to using our product. However, to prove this hypothesis, additional data would be needed.
 Additionally, by analyzing this plot, we can see that we need to find ways to help customers reduce the proportion of sedentary activity and increase the proportion of light activity throughout the day. According to research, sedentary activity should not exceed 800 minutes, as it can have negative effects on health. Other activity levels appear to be stable, and there is still room for improvement among customers.
