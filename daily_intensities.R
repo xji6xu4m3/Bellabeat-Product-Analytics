@@ -4,7 +4,7 @@ library(readr)
 library(skimr)
 
 #read the csv file
-daily_intensities <- read.csv("dailyIntensities_merged.csv")
+daily_intensities <- read.csv("dailyIntensities.csv")
 
 #review the summary of data
 skim_without_charts(daily_intensities)
@@ -36,7 +36,7 @@ daily_intensities_changes_stacked %>%
   ggplot() + 
   geom_boxplot(mapping = aes(x = Level_of_Intensities, y = Minutes, fill = Level_of_Intensities )) + 
   facet_wrap(~Level_of_Intensities, scales = 'free') +
-  ggtitle("Average of Each Daily Intensities")
+  ggtitle("2016 Apr. - May. Average of Each Daily Intensities")
 
 #filter out outliers (daily_intensities_changes)
 s_q1 <- quantile(daily_intensities_changes$Daily_Sedentary , 0.25)
@@ -68,6 +68,6 @@ daily_intensities_changes %>%
   geom_smooth(aes(x = ActivityDay , y = Daily_LightlyActive, color = 'Daily_LightlyActive'),se = FALSE) +
   geom_smooth(aes(x = ActivityDay , y = Daily_FairlyActive, color = 'Daily_FairlyActive'),se = FALSE) +
   geom_smooth(aes(x = ActivityDay , y = Daily_VeryActive, color = 'Daily_VeryActive'),se = FALSE) +  
-  labs( title = "Daily Intensities Trend", x = "Date", y = "Minutes") +
+  labs( title = "2016 Daily Intensities Trend", x = "Date", y = "Minutes") +
   scale_color_discrete(name = "Levels of intensities") 
  

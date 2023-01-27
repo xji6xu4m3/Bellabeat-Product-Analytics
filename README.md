@@ -20,6 +20,8 @@ By reviewing the summary table of the daily intensities dataset, we can see that
 ![summary_of_daily_intensities_dataset](daily_intensities_summary.png)
 
 ## Analysis
+I chose to use R as the analysis tool for this project due to its wide range of plotting packages and powerful data analysis capabilities. R makes it easy to create professional-looking visualizations and perform complex data analysis tasks.
+
 ### Checking the Average Minutes of Daily Intensities
 The daily intensities dataset includes four types of activity: sedentary, light active, fairly active, and very active.
 
