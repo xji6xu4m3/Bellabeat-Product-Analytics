@@ -30,7 +30,7 @@ The daily intensities dataset includes four types of activity: sedentary, light 
 The boxplot can be used to identify the distribution of each activity level. From the chart, it appears that the sedentary activity level has the highest average minutes, indicating that most customers spend a significant amount of time sitting and not engaging in intense physical activity throughout the day. The average minutes for sedentary activity is 991, for light activity is 193, for fairly active is 13.6, and for very active is 21.2. There are large gaps between each category. The marketing strategy team should consider this information in customer behavior as an important factor in their strategy.
 
 ### The Activity Trend
-![activity_trend](mean_daily_intensities.png)
+![activity_trend](daily_intensities_trend.png)
 
 The gaps between each activity level are more obvious in a line plot. The sedentary activity level is significantly above other activities. Although the trend has declined slightly over time, it is still significantly higher than other activities.
 The decline in sedentary activity may indicate that customers are intentionally reducing their sedentary activity due to using our product. However, to prove this hypothesis, additional data would be needed.
